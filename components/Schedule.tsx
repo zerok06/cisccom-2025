@@ -73,7 +73,7 @@ export default function Schedule() {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="flex justify-center gap-4 mb-12"
+          className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 mb-12 px-4"
         >
           {([24, 25] as const).map((day) => (
   <motion.button
@@ -81,7 +81,7 @@ export default function Schedule() {
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}
     onClick={() => setActiveDay(day)}
-    className={`px-8 py-3 rounded-full font-semibold transition-all ${
+    className={`px-6 sm:px-8 py-3 rounded-full font-semibold transition-all text-sm sm:text-base ${
       activeDay === day
         ? "bg-gradient-to-r from-blue-600 to-cyan-500 text-white shadow-lg shadow-cyan-500/30"
         : "bg-white/10 text-gray-400 hover:bg-white/20"
@@ -93,9 +93,10 @@ export default function Schedule() {
 
         </motion.div>
 
-        <div className="max-w-3xl mx-auto relative">
+        <div className="max-w-3xl mx-auto relative px-4">
+          {/* Línea vertical - oculta en móvil */}
           <div
-            className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-px bg-white/10"
+            className="hidden md:block absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-px bg-white/10"
             aria-hidden="true"
           />
 
@@ -105,18 +106,21 @@ export default function Schedule() {
               initial={{ opacity: 0, y: 24 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 24 }}
               transition={{ duration: 0.5, delay: index * 0.07 }}
-              className="relative flex flex-col md:flex-row items-center mb-8 md:mb-10"
+              className="relative flex flex-col md:flex-row items-start md:items-center mb-6 md:mb-10"
             >
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-cyan-400 shadow-[0_0_0_6px_rgba(34,211,238,0.2)]" />
+              {/* Punto indicador */}
+              <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-cyan-400 shadow-[0_0_0_6px_rgba(34,211,238,0.2)]" />
 
-              <div className="md:w-1/2 md:pr-12 text-right md:text-right">
-                <p className="text-cyan-300 font-bold text-lg">{item.time}</p>
+              {/* Tiempo */}
+              <div className="w-full md:w-1/2 md:pr-12 text-left md:text-right mb-2 md:mb-0">
+                <p className="text-cyan-300 font-bold text-base sm:text-lg">{item.time}</p>
               </div>
 
-              <div className="md:w-1/2 md:pl-12 mt-4 md:mt-0">
-                <div className="bg-gradient-to-r from-blue-900/30 to-cyan-900/20 backdrop-blur-sm border border-cyan-400/20 rounded-xl p-6 text-center md:text-left">
-                  <h3 className="text-xl font-bold text-white mb-1">{item.title}</h3>
-                  {item.speaker && <p className="text-gray-400">{item.speaker}</p>}
+              {/* Contenido */}
+              <div className="w-full md:w-1/2 md:pl-12">
+                <div className="bg-gradient-to-r from-blue-900/30 to-cyan-900/20 backdrop-blur-sm border border-cyan-400/20 rounded-xl p-4 sm:p-6 text-left">
+                  <h3 className="text-lg sm:text-xl font-bold text-white mb-1">{item.title}</h3>
+                  {item.speaker && <p className="text-gray-400 text-sm sm:text-base">{item.speaker}</p>}
                 </div>
               </div>
             </motion.div>
