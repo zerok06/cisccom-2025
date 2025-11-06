@@ -17,21 +17,30 @@ const fadeUp = (delay = 0) => ({
 
 import { useEffect, useState } from "react";
 
+const calculateTimeLeft = (eventDate: number) => {
+  const now = Date.now();
+  const diff = Math.max(eventDate - now, 0);
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  return { days, hours, minutes };
+};
+
 export default function Hero() {
   const eventDate = new Date("2025-11-24T09:00:00-05:00").getTime();
-  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0 });
+  const [timeLeft, setTimeLeft] = useState(() => calculateTimeLeft(eventDate));
 
   useEffect(() => {
+    // Actualizar inmediatamente
+    setTimeLeft(calculateTimeLeft(eventDate));
+    
+    // Actualizar cada 30 segundos
     const id = setInterval(() => {
-      const now = Date.now();
-      const diff = Math.max(eventDate - now, 0);
-      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-      setTimeLeft({ days, hours, minutes });
+      setTimeLeft(calculateTimeLeft(eventDate));
     }, 1000 * 30);
+    
     return () => clearInterval(id);
-  }, []);
+  }, [eventDate]);
   return (
     <section
       id="inicio"
