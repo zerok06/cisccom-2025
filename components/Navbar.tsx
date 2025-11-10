@@ -31,7 +31,7 @@ export default function Navbar() {
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-blue-400 to-cyan-200 animate-gradient-x">
             CISCCOM
           </span>
-          <span className="text-white/40 mx-1 hidden sm:inline">—</span>
+         
           <motion.span
             animate={{ color: ["#e0f7ff", "#a5e4ff", "#e0f7ff"] }}
             transition={{ duration: 3, repeat: Infinity }}
