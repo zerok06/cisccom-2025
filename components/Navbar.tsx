@@ -36,7 +36,7 @@ export default function Navbar() {
             animate={{ color: ["#e0f7ff", "#a5e4ff", "#e0f7ff"] }}
             transition={{ duration: 3, repeat: Infinity }}
           >
-            2025
+          
           </motion.span>
 
           {/* Glow del logo */}
