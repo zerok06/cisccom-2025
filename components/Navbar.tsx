@@ -29,14 +29,14 @@ export default function Navbar() {
           className="relative font-extrabold text-xl md:text-2xl tracking-wide text-white select-none"
         >
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-blue-400 to-cyan-200 animate-gradient-x">
-            CISCOM
+            CISCCOM
           </span>
           <span className="text-white/40 mx-1 hidden sm:inline">—</span>
           <motion.span
             animate={{ color: ["#e0f7ff", "#a5e4ff", "#e0f7ff"] }}
             transition={{ duration: 3, repeat: Infinity }}
           >
-            UNAM
+            2025
           </motion.span>
 
           {/* Glow del logo */}
