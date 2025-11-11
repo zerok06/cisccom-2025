@@ -4,6 +4,7 @@ import About from "@/components/About";
 import Speakers from "@/components/Speakers";
 import Alumni from "@/components/Alumni";
 import Schedule from "@/components/Schedule";
+import Sponsors from "@/components/Sponsors";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <Speakers />
       <Alumni />
       <Schedule />
+      <Sponsors />
       <Footer />
     </div>
   );
