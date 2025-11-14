@@ -136,8 +136,8 @@ export default function Hero() {
           animate="visible"
           className="mt-14 flex justify-center"
         >
-          <a href="https://unam.edu.pe/cisccom" className="url-pill text-gray-200 hover:text-white transition-colors">
-            <span className="text-sm">unam.edu.pe/cisccom</span>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScNclIa_u8A_e3E4cOx3-WKvwNx59g66EUIkvlmT0IqOurBLA/viewform" className="url-pill text-gray-200 hover:text-white transition-colors">
+            <span className="text-sm">Regístrate aqui!</span>
           </a>
         </motion.div>
       </div>
