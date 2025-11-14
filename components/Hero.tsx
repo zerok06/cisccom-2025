@@ -136,8 +136,14 @@ export default function Hero() {
           animate="visible"
           className="mt-14 flex justify-center"
         >
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLScNclIa_u8A_e3E4cOx3-WKvwNx59g66EUIkvlmT0IqOurBLA/viewform" className="url-pill text-gray-200 hover:text-white transition-colors">
-            <span className="text-sm">Regístrate aqui!</span>
+          <a 
+            href="https://docs.google.com/forms/d/e/1FAIpQLScNclIa_u8A_e3E4cOx3-WKvwNx59g66EUIkvlmT0IqOurBLA/viewform" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative inline-block px-10 py-4 rounded-2xl border border-white/20 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-lg shadow-[0_8px_32px_0_rgba(255,255,255,0.1)] text-white font-medium hover:border-white/30 hover:shadow-[0_8px_32px_0_rgba(255,255,255,0.2)] transition-all duration-500 ease-out overflow-hidden"
+          >
+            <span className="relative z-10 text-base tracking-wide">Regístrate aquí</span>
+            <div className="absolute inset-0 bg-gradient-to-br from-white/0 to-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
           </a>
         </motion.div>
       </div>
