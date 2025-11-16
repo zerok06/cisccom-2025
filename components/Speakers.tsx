@@ -16,22 +16,23 @@ export default function Speakers() {
       image: "/speakers/saul.jpeg",
     },
     {
-      name: "Dr. Aníbal Flores García",
-      role: "Docente Principal y Coordinador del Grupo de Investigación de IA",
-      description: "Doctor en Ciencias de la Computación (UNSA) e Ingeniero de Sistemas con más de 20 años de experiencia. Investigador experto en Inteligencia Artificial, Regresión y PLN. Actualmente en la Universidad Nacional de Moquegua.",
-      image: "/speakers/anibal.jpeg",
-    },
-    {
       name: "Dr. Américo Rubín de Celis Vidal",
       role: "Docente Investigador",
       description: "Doctor (PhD) en Ingeniería Eléctrica (Sistemas de Comunicaciones) por la PUC-Rio, Brasil. Ingeniero Electrónico (UPT) con amplia experiencia en comunicaciones satelitales, procesamiento digital de señales y circuitos electrónicos. Actualmente en la Universidad Privada de Tacna.",
       image: "/speakers/americo.jpeg",
     },
+    
     {
-      name: "MSc. Yessica Rosas Cuevas",
-      role: "Ingeniera de Sistemas e Investigadora",
-      description: "Ingeniera de Sistemas (UNSA) con Maestría en Robótica por la PUC-Rio (Brasil). Experta en IoT y robótica aplicada a la agricultura, acuicultura y educación. Cuenta con +7 años de experiencia en programación y gestión de proyectos tecnológicos.",
-      image: "/speakers/yessica.jpeg",
+      name: "PdD. Rómulo Walter Condori Bustincio",
+      role: "Universidad Estatal de Campinas (UNICAMP), Brazil",
+      description: "Candidato a doctorado en el Instituto de Computación de la Universidad Estatal de Campinas (UNICAMP), en Brasil. Integra el Hub de Inteligencia Artificial y Arquitecturas Cognitivas (HIAAC) y el Laboratório de Redes de Computadores (LRC). Además, está reconocido como investigador RENACYT por el CONCYTEC del Perú.",
+      image: "/speakers/Romulo.jpg",
+    },
+    {
+      name: "Dr. Aníbal Flores García",
+      role: "Docente Principal y Coordinador del Grupo de Investigación de IA",
+      description: "Doctor en Ciencias de la Computación (UNSA) e Ingeniero de Sistemas con más de 20 años de experiencia. Investigador experto en Inteligencia Artificial, Regresión y PLN. Actualmente en la Universidad Nacional de Moquegua.",
+      image: "/speakers/anibal.jpeg",
     },
   ];
 
