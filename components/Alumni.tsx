@@ -48,7 +48,7 @@ const alumni = [
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent">
-              Egresados
+              Coloquio de Egresados
             </span>
           </h2>
           <p className="text-xl text-gray-300" style={{ textAlign: 'center' }}>
