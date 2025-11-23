@@ -24,6 +24,14 @@ const alumni = [
     image: "/speakers/allison.jpg",
   },
   {
+    name: "Feliciano Coila Yucra",
+    role: "Ingeniero Junior de Tecnología e Innovación Minera en Cerro Verde",
+  
+    description:
+      "Maestría en Redes y Telecomunicaciones en la UNSA. Ha trabajado como informático en el área de Tecnologías de la Información en Austral y la SUNAT entre otros, ha desarrollado experiencia en integración OT/IT en empresas como Southern Perú y Quellaveco.",
+    image: "/speakers/feliciano.jpeg",
+  },
+  {
     name: "Elmer Collanqui Casapia",
     role: "CTO de AiMara Lab",
     description:
