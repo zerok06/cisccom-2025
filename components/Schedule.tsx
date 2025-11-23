@@ -34,7 +34,7 @@ const scheduleData: Record<"24" | "25", Schedule> = {
       { time: "5:00 pm - 5:40 pm", title: "Ponencia 1", speaker: "Mariela M. Nina Capujra" },
       { time: "5:40 pm - 6:10 pm", title: "Ponencia 2", speaker: "Allison I. Reynoso Serra" },
       { time: "6:10 pm - 6:30 pm", title: "Coffee Break", speaker: "" },
-      { time: "6:30 pm - 7:10 pm", title: "Ponencia 3", speaker: "Albert Pino Hurtado" },
+      { time: "6:30 pm - 7:10 pm", title: "Ponencia 3", speaker: "Feliciano Coila Yucra" },
       { time: "7:10 pm - 7:50 pm", title: "Ponencia 4", speaker: "Elmer Collanqui Casapia" },
     ],
   },
